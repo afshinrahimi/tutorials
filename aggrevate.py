@@ -41,4 +41,13 @@ for i in range(agrgrevate_iters):
     add cost sensitive sample obs, all_action_loss.values() to dataset D_i
   Model.train(D_i)
   
-        
+  
+ '''
+ Aggrevate for sequence labelling e.g. pos tagging
+ 1- train a model/policy on training data
+ 2- given a sentence choose one word w_i randomly and consider all the pos tags
+ 3- for each pos tag use the reference policy/training gold labels to complete the sentence tag/trajectory
+ 4- compute the loss of each pos tag t_i
+ 5- add a cost sensitive example to a dataset D w_i, t_i_cost for all possibe pos tags
+ 6-train a cost sensitive classifier again and go to 2
+ '''
