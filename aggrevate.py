@@ -1,5 +1,14 @@
 #aggrevate imitation learning
 #based on ICML2015 Tutorial http://hunch.net/~l2s/merged.pdf
+'''
+1.Let learned policy π drive for t timesteps to obs. o
+2.For each possible action a:
+● Take action a, and let expert πref drive the rest
+● Record the overall loss, ca
+3.Update π based on example:
+(o, 〈c1, c2,..., cK〉)
+4.Goto (1)
+'''
 
 observations, actions = load_data()
 def expert_action(obs):
