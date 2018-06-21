@@ -1,4 +1,5 @@
 #dagger imitation learning based on https://github.com/avisingh599/imitation-dagger/blob/master/dagger.py
+#paper: https://www.cs.cmu.edu/~sross1/publications/Ross-AIStats11-NoRegret.pdf related work lols searn by hal daume
 
 def get_expert_label(observation):
   return action
