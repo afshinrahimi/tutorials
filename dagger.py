@@ -1,4 +1,4 @@
-#dagger imitation learning
+#dagger imitation learning based on https://github.com/avisingh599/imitation-dagger/blob/master/dagger.py
 
 def get_expert_label(observation):
   return action
